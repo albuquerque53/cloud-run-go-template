@@ -18,7 +18,7 @@ func TestEntrypoint(t *testing.T) {
 	_, err := io.ReadAll(resp.Body)
 
 	if err != nil {
-		t.Errorf("read of response body should not return erro, but returned %v", err.Error())
+		t.Errorf("read of response body should not return error, but returned %v", err.Error())
 	}
 
 	if resp.StatusCode != http.StatusOK {
